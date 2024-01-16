@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { ITemplate } from '../interfaces/template.interface';
-import { TemplateDto } from '../dtos/template.dto';
 
 @Injectable()
 export class TemplateService implements ITemplate {
@@ -8,7 +7,7 @@ export class TemplateService implements ITemplate {
     //
   }
 
-  templateService(_data: TemplateDto): void {
+  templateService(): void {
     //
   }
 }
